@@ -16,3 +16,9 @@ def multiply(x, y):
 
 def error(x, y):
     return 0
+
+def count_by(x, n):
+    count_list = []
+    for i in range(1, n + 1):
+        count_list.append(i * x)
+    return count_list

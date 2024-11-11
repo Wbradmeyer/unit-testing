@@ -34,5 +34,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.count_by(2, 5), [2, 4, 6, 8, 10])
         self.assertEqual(calculator.count_by(3, 5), [3, 6, 9, 12, 15])
 
+    def test_is_single_digit_even(self):
+        self.assertTrue(calculator.is_single_digit_even(4, 2))
+        self.assertFalse(calculator.is_single_digit_even(5, 2))
+        self.assertFalse(calculator.is_single_digit_even(9, 2))
+        self.assertFalse(calculator.is_single_digit_even(-4, -2))
+
 if __name__ == '__main__':
     unittest.main()

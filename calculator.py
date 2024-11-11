@@ -22,3 +22,9 @@ def count_by(x, n):
     for i in range(1, n + 1):
         count_list.append(i * x)
     return count_list
+
+def is_single_digit_even(x, y):
+    if (x + y) % 2 or (x + y) > 9 or (x + y) < 2:
+        return False
+    else:
+        return True

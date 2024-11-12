@@ -28,3 +28,6 @@ def is_single_digit_even(x, y):
         return False
     else:
         return True
+    
+def is_in_num_list(x):
+    return x

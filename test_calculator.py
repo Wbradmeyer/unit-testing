@@ -40,5 +40,9 @@ class TestCalculator(unittest.TestCase):
         self.assertFalse(calculator.is_single_digit_even(9, 2))
         self.assertFalse(calculator.is_single_digit_even(-4, -2))
 
+    def test_is_in_num_list(self):
+        self.assertIn(calculator.is_in_num_list(2), [1,2,3,4,5])
+        self.assertIn(calculator.is_in_num_list(3), [1,2,3,4,5])
+
 if __name__ == '__main__':
     unittest.main()

@@ -31,3 +31,6 @@ def is_single_digit_even(x, y):
     
 def is_in_num_list(x):
     return x
+
+def bigger_num(x):
+    return x

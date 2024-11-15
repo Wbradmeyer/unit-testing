@@ -44,5 +44,8 @@ class TestCalculator(unittest.TestCase):
         self.assertIn(calculator.is_in_num_list(2), [1,2,3,4,5])
         self.assertIn(calculator.is_in_num_list(3), [1,2,3,4,5])
 
+    def test_bigger_num(self):
+        self.assertGreater(calculator.bigger_num(3), 2)
+
 if __name__ == '__main__':
     unittest.main()

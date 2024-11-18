@@ -7,6 +7,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.add(-1, 1), 0)
         self.assertEqual(calculator.add(-1, -1), -2)
         self.assertEqual(calculator.add(0, 0), 0)
+        self.assertNotEqual(calculator.add(1, 2), 2)
 
     def test_subtract(self):
         self.assertEqual(calculator.subtract(5, 2), 3)

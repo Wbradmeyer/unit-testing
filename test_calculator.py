@@ -48,5 +48,9 @@ class TestCalculator(unittest.TestCase):
     def test_bigger_num(self):
         self.assertGreater(calculator.bigger_num(3), 2)
 
+    def test_num_to_power_of(self):
+        self.assertEqual(calculator.num_to_power_of(2, 2), 4)
+        self.assertEqual(calculator.num_to_power_of(3, 2), 9)
+
 if __name__ == '__main__':
     unittest.main()

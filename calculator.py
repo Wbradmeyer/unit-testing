@@ -34,3 +34,6 @@ def is_in_num_list(x):
 
 def bigger_num(x):
     return x
+
+def num_to_power_of(x, y):
+    return x ** y

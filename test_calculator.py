@@ -51,6 +51,7 @@ class TestCalculator(unittest.TestCase):
     def test_num_to_power_of(self):
         self.assertEqual(calculator.num_to_power_of(2, 2), 4)
         self.assertEqual(calculator.num_to_power_of(3, 2), 9)
+        self.assertEqual(calculator.num_to_power_of(4, 4), 256)
 
 if __name__ == '__main__':
     unittest.main()

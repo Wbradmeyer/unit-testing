@@ -53,5 +53,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.num_to_power_of(3, 2), 9)
         self.assertEqual(calculator.num_to_power_of(4, 4), 256)
 
+    def test_is_square_root(self):
+        self.assertTrue(calculator.is_square_root(4, 2))
+        self.assertTrue(calculator.is_square_root(9, 3))
+        self.assertTrue(calculator.is_square_root(64, 8))
+
 if __name__ == '__main__':
     unittest.main()

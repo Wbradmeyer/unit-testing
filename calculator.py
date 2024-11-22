@@ -37,3 +37,6 @@ def bigger_num(x):
 
 def num_to_power_of(x, y):
     return x ** y
+
+def is_square_root(x, y):
+    return True if y * y == x else False
